@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.celsius {
+   color: aqua;
+}
+
+.fahrenheit {
+    color: chartreuse;
+}
+
+.kelvin {
+    color: crimson;
+}
