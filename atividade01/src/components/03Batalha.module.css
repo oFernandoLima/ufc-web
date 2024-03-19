@@ -1,0 +1,61 @@
+.world {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 8px;
+
+    max-width: 30rem;
+    width: 100%;
+
+    background-color: darkgray;
+}
+
+.arena {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    gap: 1rem;
+    padding: 1rem;
+
+    border-radius: 8px;
+    width: 100%;
+
+    background-color: lightgray;
+}
+
+.arena img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.fight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fighter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+.fighter img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+

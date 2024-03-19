@@ -1,0 +1,14 @@
+.pcComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    width: 100%;
+
+    background-color: lightgray;
+    border-radius: 8px;
+}

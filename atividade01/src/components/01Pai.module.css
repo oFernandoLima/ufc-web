@@ -1,0 +1,14 @@
+.pai {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    max-width: 20rem;
+
+    background-color: darkgray;
+    border-radius: 8px;
+}
