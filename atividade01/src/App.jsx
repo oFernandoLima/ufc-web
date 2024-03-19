@@ -5,7 +5,7 @@ import sukunaImg from './assets/sukuna.jpg'
 import todorokiImg from './assets/todoroki.jpg'
 import vsImg from './assets/vs.png'
 import { Pai } from './components/01Pai'
-import { Memoria, PlacaDeVideo, PlacaMae } from './components/02MeuPc'
+import * as PcComponents from './components/02MeuPc'
 import { Arena, Enemy, Hero, World } from './components/03Batalha'
 
 export function App() {
@@ -14,12 +14,15 @@ export function App() {
       <Pai />
       <div className={style.meuPC}>
         <h1>Meu PC</h1>
-        <PlacaMae nome="Gigabyte B760M AORUS ELITE" preco="R$ 1.199,99" />
-        <Memoria
+        <PcComponents.PlacaMae
+          nome="Gigabyte B760M AORUS ELITE"
+          preco="R$ 1.199,99"
+        />
+        <PcComponents.Memoria
           nome="Kingston Fury Beast RGB, 16GB, 3200MHz, DDR4"
           preco="R$ 299,99"
         />
-        <PlacaDeVideo
+        <PcComponents.PlacaDeVideo
           nome="RTX 4060 Ti VENTUS 3X 8G OC MSI"
           preco="R$ 2.549,99"
         />
