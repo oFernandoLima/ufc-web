@@ -1,0 +1,17 @@
+.avo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 20rem;
+    padding: 2rem;
+
+    background-color: lightgray;
+    border-radius: 8px;
+
+}
+
+.avo h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
