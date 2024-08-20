@@ -1,0 +1,19 @@
+.resposta {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.questao02 div {
+    display: flex;
+    flex-direction: column;
+}
+
+img, button {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+

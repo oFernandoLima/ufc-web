@@ -1,0 +1,33 @@
+Resposta:
+
+O problema do "PROPS DRILLING" ocorre quando você precisa passar dados para um componente "profundo/distante", uma vez que será necessário passar esses dados através de vários componentes intermediários que, provavelmente, não irão utilizá-los. Sendo assim, a utilização de Contextos no React ajuda a solucionar esse problema ao permitir compartilhar dados ente componentes sem utilizar as "props", isso é possível ao criar um Contexto (createContext) com os dados a serem compartilhados e provê-los (Provider) aos componentes interessados que irão acessá-los através do hook useContext.
+
+Exemplo:
+
+import React from 'react';
+
+const MeuContexto = React.createContext(); // Cria o contexto
+
+const MeuContextoProvider = ({ children }) => {
+    const dados = 'Dados do contexto';
+    
+    return (
+        <MeuContexto.Provider value={dados}> // Fornece o contexto aos componentes interessados
+            {children}
+        </MeuContexto.Provider>
+    );
+};
+
+export { MeuContexto, MeuContextoProvider };
+
+const MeuComponente = () => {
+    const dados = React.useContext(MeuContexto); // Acessa os dados através do contexto
+
+    return (
+        <div>
+            <h1>{dados}</h1>
+        </div>
+    );
+};
+
+export default MeuComponente;
